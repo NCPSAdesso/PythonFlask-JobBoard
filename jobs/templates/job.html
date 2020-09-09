@@ -1,6 +1,17 @@
 {% extends 'layout.html' %}
-{% block content %}
 
-    {{ show_job(job) }}
-
-{% endblock %}
+<!-- templates/_marcos.html -->
+<!-- show_job -->
+<div class="card adjust-height">
+    <header class="card-header">
+      <p class="card-header-title">
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="content">
+        {% block content %}
+        {{ show_job(job) }}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
